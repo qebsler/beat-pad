@@ -1,5 +1,6 @@
 import Tiles from './Tiles'
 import list from './list'
+import initScroll from './scroll'
 const parent = document.getElementById('parent-pad')
 
 let tiles = []
@@ -9,3 +10,5 @@ list.forEach(obj => {
   sound.init()
   tiles.push(sound)
 })
+
+initScroll()

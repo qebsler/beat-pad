@@ -2,8 +2,13 @@
    font-family: Audiowide;
    font-size: 56px;
    color: #bfbfbf;
-   background-color: #313131;
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #313131;
 }
 
 .container {
@@ -19,6 +24,7 @@
 h1, h2 {
    text-align: center;
    width: 100%;
+   margin: 50px 0;
 }
 
 .pad-grid {
@@ -46,7 +52,7 @@ p {
    font-size: 9px;
    position: relative;
    top: 57px;
-   left: -7.5px;
+   left: -2.5px;
    text-align: left;
    background-color: transparent;
 }
@@ -60,10 +66,42 @@ p {
    height: 100vh;
 }
 
+.box-credits {
+   height: 100vh;
+   background-color: #212121;
+   margin: 0;
+   padding: 0 40px;
+}
+
+.box-pad {height: 100vh;}
+
+ul {
+   list-style: none;
+   line-height: 0.8;
+}
+
+li a {
+   font-size: 18px;
+}
+
+li::before {
+   content: '•';
+   color: #bfbfbf;
+   position: relative;
+   top: 14px;
+   left: -10px;
+}
+
 @media screen and (max-width: 690px) {
    .pad-grid {
       height: 740px;
       grid-template-columns: 33% 33% 33%;
       grid-template-rows: 16% 16% 16% 16% 16% 16%;
+   }
+   .box-pad {
+      height: 1000px;
+   }
+   .box-credits {
+      height: 100vh;
    }
 }

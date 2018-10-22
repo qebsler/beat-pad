@@ -8,7 +8,7 @@ export default class Tiles {
     this.name = name
     this.parent = parent
     this.audio = new window.Audio(src)
-    this.audio.volume = volume
+    this.audio.volume = volume || 0
   }
 
   init () {
